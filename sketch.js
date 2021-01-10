@@ -30,6 +30,7 @@ function preload(){
   obstacle6 = loadImage("obstacle6.png");
   
   gameOverImg = loadImage("gameOver.png");
+  
   restartImg = loadImage("restart.png");
 }
 
@@ -41,7 +42,7 @@ function setup() {
   trex.addAnimation("running", trex_running);
   trex.addAnimation("collided", trex_collided);
   trex.scale = 0.5;
-  
+  console.log("hi");
   ground = createSprite(200,180,400,20);
   ground.addImage("ground",groundImage);
   ground.x = ground.width /2;
